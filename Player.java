@@ -5,6 +5,18 @@ class Player{
   int pontosVida;
   String nome;
 
+  //Costrutor
+  Player(String name, int pntsVida, float posicaoInicialX, float posicaoInicialY){
+    System.out.println("Construtor do player");
+
+    nome = name;
+    pontosVida = pntsVida;
+
+    posicaoX = posicaoInicialX;
+    posicaoY = posicaoInicialY;
+    
+  }
+
   void mover(float posX, float posY){
     posicaoX += 5;
     posicaoY += 5;
@@ -23,11 +35,15 @@ class Player{
     
   }
 
-  void exibirPontosDeVida(){
+  int exibirPontosDeVida(){
+    return pontosVida;
     
   }
 
   String exibirStatus(){
+    String status ="Nome: " + nome + " Vida: " + pontosVida;
+    return status;
+    
     
   }
   
