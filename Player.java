@@ -3,6 +3,7 @@ class Player{
   float posicaoX;
   float posicaoY;
   int pontosVida;
+  int forca;
   String nome;
 
   //Costrutor
@@ -15,6 +16,9 @@ class Player{
     posicaoX = posicaoInicialX;
     posicaoY = posicaoInicialY;
     
+  }
+  int causarDano(){
+    return forca+(danoDaArma * 2);
   }
 
   void mover(float posX, float posY){
@@ -43,7 +47,6 @@ class Player{
   String exibirStatus(){
     String status ="Nome: " + nome + " Vida: " + pontosVida;
     return status;
-    
     
   }
   
