@@ -3,6 +3,7 @@ class Player{
   float posicaoX;
   float posicaoY;
   int pontosVida;
+  int danoArma;
   int forca;
   String nome;
 
@@ -18,7 +19,7 @@ class Player{
     
   }
   int causarDano(){
-    return forca+(danoDaArma * 2);
+    return forca+(danoArma * 2);
   }
 
   void mover(float posX, float posY){

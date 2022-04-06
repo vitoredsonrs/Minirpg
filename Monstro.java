@@ -1,9 +1,18 @@
 class Monstro{
 
   String nome;
-  int forca;
   int pontosVida;
+  int forca;
 
+Monstro(String name, int pntsVida, int force){
+    System.out.println("Construtor do monstro");
+
+    nome = name;
+    forca = force;
+    pontosVida = pntsVida;
+  }
+  
+  
   int causarDanos(){
     return forca * 3;
   }
@@ -20,5 +29,9 @@ class Monstro{
   }
   void morrer(){
     System.out.println("O monstro está morto.");
+  }
+  String exibirStatus(){
+    String status ="Nome: " + nome + " Vida: " + pontosVida;
+    return status;
   }
 }
