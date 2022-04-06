@@ -4,7 +4,7 @@ class Arma{
   int pontosDano;
 
 Arma(String name, int pntsDano){
-  System.out.println("Construtor da arma");
+  //System.out.println("Construtor da arma");
 
   nome = name;
   pontosDano = pntsDano;

@@ -5,15 +5,14 @@ class Monstro{
   int forca;
 
 Monstro(String name, int pntsVida, int force){
-    System.out.println("Construtor do monstro");
+    //System.out.println("Construtor do monstro");
 
     nome = name;
     forca = force;
     pontosVida = pntsVida;
   }
   
-  
-  int causarDanos(){
+  int causarDano(){
     return forca * 3;
   }
 

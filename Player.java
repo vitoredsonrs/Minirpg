@@ -9,7 +9,7 @@ class Player{
 
   //Costrutor
   Player(String name, int pntsVida, float posicaoInicialX, float posicaoInicialY){
-    System.out.println("Construtor do player");
+    //System.out.println("Construtor do player");
 
     nome = name;
     pontosVida = pntsVida;
@@ -19,7 +19,7 @@ class Player{
     
   }
   int causarDano(){
-    return forca+(danoArma * 2);
+    return forca;
   }
 
   void mover(float posX, float posY){
@@ -44,6 +44,7 @@ class Player{
     return pontosVida;
     
   }
+
 
   String exibirStatus(){
     String status ="Nome: " + nome + " Vida: " + pontosVida;
